@@ -17,18 +17,13 @@ export default function NavbarClient() {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/new-releases">
             Features
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
+          <Link href="/" aria-current="page">
+            API
           </Link>
         </NavbarItem>
       </NavbarContent>
