@@ -18,7 +18,7 @@ async function fetchNewReleases(token: string) {
 export default async function NewReleases() {
   const credentials = await spotifyAuth();
   const newReleases = await fetchNewReleases(credentials.access_token);
-  newReleases.albums.items.splice(8);
+  // newReleases.albums.items.splice(8);
 
   const youtubeUrls = newReleases.albums.items.map(async (item: any) => {
     const filters = await ytsr.getFilters(item.name);
