@@ -25,7 +25,7 @@ export default function CardContainer({ items }: { items: any }) {
         delay: stagger(0.2, { startDelay: 0.1 }),
       }
     );
-  }, []);
+  });
 
   return (
     <>

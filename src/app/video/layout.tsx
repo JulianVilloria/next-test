@@ -3,5 +3,5 @@ export default function NewReleaseLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <section>{children}</section>;
+  return <section className="dark bg-background">{children}</section>;
 }
